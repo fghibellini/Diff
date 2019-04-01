@@ -29,6 +29,6 @@ test-suite diff-tests
   hs-source-dirs: test, src
   main-is: Test.hs
   build-depends: base >= 3 && <= 6, array
-                , pretty, QuickCheck, test-framework
+                , pretty, QuickCheck < 2.12, test-framework
                 , test-framework-quickcheck2, process
                 , directory
