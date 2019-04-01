@@ -26,9 +26,9 @@ source-repository head
 
 test-suite diff-tests
   type: exitcode-stdio-1.0
-  hs-source-dirs: test, src
+  hs-source-dirs: test
   main-is: Test.hs
   build-depends: base >= 3 && <= 6, array
                 , pretty, QuickCheck >= 2.12, test-framework
                 , test-framework-quickcheck2, process
-                , directory
+                , directory, Diff
